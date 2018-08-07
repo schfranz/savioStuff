@@ -233,7 +233,7 @@ df4  log $ fluence-to-dose conversion factors
      1.14E-06 1.47E-06 1.79E-06 2.44E-06 3.03E-06 4.00E-06 4.76E-06
      5.56E-06 6.25E-06 7.69E-06 9.09E-06 
 c
-f14:n 5 $ average photon flux in cell 5; the 1 only distinguishes it from 4; last digit matters
+f14:n 5 $ average neutron flux in cell 5; the 1 only distinguishes it from 4; last digit matters
 fs14  -41 -60 -61 -62 -63 -64 -65 -66 -67 -68
       -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
 sd14  3.83902E+05 2.46277E+05 3.06997E+05 3.67716E+05 4.28435E+05
@@ -252,6 +252,6 @@ c ---Statistics
 mode n p $ MOEP p
 print
 prdmp 2j 1 $ dump card; j skips columns -> MCT is set to 1
-nps 1e7
+nps 1e9
 c CTME 2 $computing time of 2 minutes
 c
