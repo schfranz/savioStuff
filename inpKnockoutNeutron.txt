@@ -12,10 +12,10 @@ c Case (upper cap, lower cap, outer case)
 301  3  -7.905  -41 31 -45 46            imp:np=1
 c 
 c Central poison rod
-100  3  -7.905  -10 46 -15 (11:14)     imp:np=1 $ outer shell with cap
-101  0          -11 12 46 -14          imp:np=1 $ void between steel shells
-102  3  -7.905  -12 13 46 -14          imp:np=1 $ inner steel shell
-103  2  -2.52   -13 46 -14             imp:np=1 $ central B4C rod
+100  3  -7.905  -10 17 -15 (11:14:16)  imp:np=1 $ outer shell with cap
+101  0          -11 12 16 -14          imp:np=1 $ void between steel shells
+102  3  -7.905  -12 13 16 -14          imp:np=1 $ inner steel shell
+103  2  -2.52   -13 16 -14             imp:np=1 $ central B4C rod
 c 
 c Surrounding poison rods
 200  3  -7.905  -20 46 -29 (21:28)     imp:np=1 $ outer shell of right rod
@@ -45,18 +45,20 @@ c
 c Outer case
 31 cz   17.14 $ 17.1451 inside outer shell
 41 cz   17.78 $ outside outer shell
-45 pz  174.75 $ 174.4755 inner surface of lid
-46 pz -174.75 $ -174.4755
-47 pz  184.95 $ outer surface of lid
-48 pz -184.95
+45 pz  174.75 $ 174.4755 inner surface of upper lid
+46 pz -184.31 $ -174.75 inner surface of lower lid
+47 pz  184.95 $ outer surface of upper lid
+48 pz -184.95 $ outer surface of lower lid
 c 
 c Central poison rod
-10 cz    3.65 $ outside outer SS rod
-11 cz    2.86 $ inside outer SS rod
+10 cz    3.65  $ outside outer SS rod
+11 cz    2.86  $ inside outer SS rod
 12 cz    2.695 $ outside inner SS rod; gap between rods
 13 cz    2.535 $ inside inner SS rod; B4C inside
-14 pz  159.26 $ underside of cap
-15 pz  165.61 $ top of cap
+14 pz  159.26  $ underside of upper cap
+15 pz  165.61  $ top of upper cap
+16 pz  -174.75 $ top of lower cap
+17 pz  -181.1  $ underside of lower cap
 c 
 c Outer poison rods 
 c outside SS rod, first rod on right
@@ -68,8 +70,9 @@ c outside SS rod, first rod on right
 25 c/z   0  -8.9803   1.07 $ inside left rod
 26 c/z   8.9803   0   1.67 $ outside SS rod, lower rod
 27 c/z   8.9803   0   1.07 $ inside lower rod
-28 pz    153.863 $ underside of cap
-29 pz    156.085 $ top of cap
+28 pz    153.863 $ underside of upper cap
+29 pz    156.085 $ top of upper cap
+208 pz   -176.972 $ underside of lower cap (top is 16)
 c
 c Outer layer (water or air) (arb. thickness -- 1 m radially, 20 cm axially)
 51 cz  117.7800
