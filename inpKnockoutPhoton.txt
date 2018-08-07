@@ -2,7 +2,7 @@ Simple Knockout Canister Model
 c
 c This model describes the fuel canister used to defuel TMI-2
 c Photon source and photon transport only
-c Random source points
+c Homogeneous source
 c
 c ---Cells
 c
@@ -60,14 +60,14 @@ c Central poison rod
 c 
 c Outer poison rods 
 c outside SS rod, first rod on right
-20 c/z   0   8.9803   3.34 $ "/" indicates "parallel to"; entries are xCenter, yCenter, r
-21 c/z   0   8.9803   2.14 $ inside SS rod, B4C inside
-22 c/z  -8.9803   0   3.34 $ outside SS rod, upper rod
-23 c/z  -8.9803   0   2.14 $ inside upper SS rod
-24 c/z   0  -8.9803   3.34 $ outside SS rod, left rod
-25 c/z   0  -8.9803   2.14 $ inside left rod
-26 c/z   8.9803   0   3.34 $ outside SS rod, lower rod
-27 c/z   8.9803   0   2.14 $ inside lower rod
+20 c/z   0   8.9803   1.67 $ "/" indicates "parallel to"; entries are xCenter, yCenter, r
+21 c/z   0   8.9803   1.07 $ inside SS rod, B4C inside
+22 c/z  -8.9803   0   1.67 $ outside SS rod, upper rod
+23 c/z  -8.9803   0   1.07 $ inside upper SS rod
+24 c/z   0  -8.9803   1.67 $ outside SS rod, left rod
+25 c/z   0  -8.9803   1.07 $ inside left rod
+26 c/z   8.9803   0   1.67 $ outside SS rod, lower rod
+27 c/z   8.9803   0   1.07 $ inside lower rod
 28 pz    153.863 $ underside of cap
 29 pz    156.085 $ top of cap
 c
