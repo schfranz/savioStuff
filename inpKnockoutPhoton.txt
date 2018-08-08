@@ -27,8 +27,11 @@ c Surrounding poison rods
 206  3  -7.905  -26 208 -29 (27:28:-16) imp:p=1 $ outer shell of lower rod
 207  2  -2.52   -27 16 -28              imp:p=1 $ B4C in lower rod
 c 
+c Lower support plate
+90   3  -7.905  -31 -17 90    imp:p=1
+c 
 c Bottom void
-700   0   -31 -17 46     imp:p=0
+700   0   -31 -90 46     imp:p=0
 c 
 c Homogeneous fuel
 800   1  -4.517  -31 -45 17 (10:15) 
@@ -62,7 +65,7 @@ c Central poison rod
 14 pz  159.26  $ underside of upper cap
 15 pz  165.61  $ top of upper cap
 16 pz  -174.75 $ top of lower cap
-17 pz  -181.1  $ underside of lower cap
+17 pz  -180.46 $ underside of lower cap
 c 
 c Outer poison rods 
 c outside SS rod, first rod on right
@@ -77,6 +80,9 @@ c outside SS rod, first rod on right
 28 pz    153.863 $ underside of upper cap
 29 pz    156.085 $ top of upper cap
 208 pz   -176.972 $ underside of lower cap (top is 16)
+c 
+c Lower support plate
+90 pz   -181.1 $ underside of support plate (top is 17)
 c 
 c Outer layer (water or air) (arb. thickness -- 1 m radially, 20 cm axially)
 51 cz  117.7800
