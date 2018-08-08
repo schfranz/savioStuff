@@ -7,28 +7,32 @@ c
 c ---Cells
 c
 c Case (upper cap, lower cap, outer case)
-300  3  -7.905  -41 -47 45               imp:p=1
-309  3  -7.905  -41 48 -46               imp:p=1
-301  3  -7.905  -41 31 -45 46            imp:p=1
+300  3  -7.905  -41 -47 45              imp:p=1
+309  3  -7.905  -41 48 -46              imp:p=1
+301  3  -7.905  -41 31 -45 46           imp:p=1
 c 
 c Central poison rod
-100  3  -7.905  -10 46 -15 (11:14)     imp:p=1 $ outer shell with cap
-101  0          -11 12 46 -14          imp:p=1 $ void between steel shells
-102  3  -7.905  -12 13 46 -14          imp:p=1 $ inner steel shell
-103  2  -2.52   -13 46 -14             imp:p=1 $ central B4C rod
+100  3  -7.905  -10 17 -15 (11:14:-16)  imp:p=1 $ outer shell with caps
+101  0          -11 12 16 -14           imp:p=1 $ void between steel shells
+102  3  -7.905  -12 13 16 -14           imp:p=1 $ inner steel shell
+103  2  -2.52   -13 16 -14              imp:p=1 $ central B4C rod
 c 
 c Surrounding poison rods
-200  3  -7.905  -20 46 -29 (21:28)     imp:p=1 $ outer shell of right rod
-201  2  -2.52   -21 46 -28             imp:p=1 $ B4C in right rod
-202  3  -7.905  -22 46 -29 (23:28)     imp:p=1 $ outer shell of upper rod
-203  2  -2.52   -23 46 -28             imp:p=1 $ B4C in upper rod
-204  3  -7.905  -24 46 -29 (25:28)     imp:p=1 $ outer shell of left rod
-205  2  -2.52   -25 46 -28             imp:p=1 $ B4C in left rod
-206  3  -7.905  -26 46 -29 (27:28)     imp:p=1 $ outer shell of lower rod
-207  2  -2.52   -27 46 -28             imp:p=1 $ B4C in lower rod
+200  3  -7.905  -20 208 -29 (21:28:-16) imp:p=1 $ outer shell of right rod
+201  2  -2.52   -21 16 -28              imp:p=1 $ B4C in right rod
+202  3  -7.905  -22 208 -29 (23:28:-16) imp:p=1 $ outer shell of upper rod
+203  2  -2.52   -23 16 -28              imp:p=1 $ B4C in upper rod
+204  3  -7.905  -24 208 -29 (25:28:-16) imp:p=1 $ outer shell of left rod
+205  2  -2.52   -25 16 -28              imp:p=1 $ B4C in left rod
+206  3  -7.905  -26 208 -29 (27:28:-16) imp:p=1 $ outer shell of lower rod
+207  2  -2.52   -27 16 -28              imp:p=1 $ B4C in lower rod
+c 
+c Bottom void
+700   0   -31 -17 46     imp:p=0
 c 
 c Homogeneous fuel
-800   1  -4.517  -31 -45 46 (10:15) (20:29) (22:29) (24:29) (26:29)  imp:p=1
+800   1  -4.517  -31 -45 17 (10:15) 
+     (20:29:-208) (22:29:-208) (24:29:-208) (26:29:-208)  imp:p=1
 c 
 c Outer layer - Air
 5  52  -0.001   (-51 -55 56) (41:47:-48)      imp:p=1
