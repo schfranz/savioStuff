@@ -139,8 +139,8 @@ c around central poison rod, first rod on right, inner circle
 231 pz    148.888 $ top of upper cap
 c
 c Drain tube
-240 c/z   0   6.7564    2.54   $ outer radius
-241 c/z   0   6.7564    2.2225 $ inner radius
+240 c/z   0   -6.7564    2.54   $ outer radius
+241 c/z   0   -6.7564    2.2225 $ inner radius
 c 
 c Tie rods
 80 c/z   -4.6152    7.9936  0.9525 $ (1)
