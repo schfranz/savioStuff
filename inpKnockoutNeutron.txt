@@ -28,10 +28,10 @@ c Surrounding poison rods
 207  2  -2.52   -27 16 -28              imp:np=1 $ B4C in lower rod
 c 
 c Lower support plate
-90   3  -7.905  -31 -17 90    imp:p=1
+90   3  -7.905  -31 -17 90    imp:np=1
 c 
 c Bottom void
-700   0   -31 -90 46     imp:p=0
+700   0   -31 -90 46     imp:np=0
 c 
 c Homogeneous fuel
 800   1  -4.517  -31 -45 17 (10:15) 
