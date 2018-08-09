@@ -187,7 +187,7 @@ si1 -17.14 17.14  $ x limits
 sp1  0     1      $ uniform probability over x-range
 si2 -17.14 17.14  $ y limits
 sp2  0     1      $ uniform probability over y-range
-si3 -174.75 174.75  $ z limits
+si3 -180.46 174.75  $ z limits
 sp3 0      1        $ uniform probability over z-range
 c
 c Energy distribution was obtained from an ORIGEN-S calculation
