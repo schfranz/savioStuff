@@ -253,8 +253,8 @@ si1 -17.14 17.14  $ x limits
 sp1  0     1      $ uniform probability over x-range
 si2 -17.14 17.14  $ y limits
 sp2  0     1      $ uniform probability over y-range
-si3 -174.75 174.75  $ z limits
-sp3 0      1        $ uniform probability over z-range
+si3 -180.637 180.637  $ z limits
+sp3 0      1          $ uniform probability over z-range
 c
 c Energy distribution was obtained from an ORIGEN-S calculation
 c BWR GE 9x9, 1040 days depletion @ 25 MW/tHM (26 GWd/tHM), 7 years cooling
@@ -331,6 +331,6 @@ c ---Statistics
 mode n p
 print
 prdmp 2j 1 $ dump card; j skips columns -> MCT is set to 1
-nps 1e7
+nps 1e5
 c CTME 2 $computing time of 2 minutes
 c
