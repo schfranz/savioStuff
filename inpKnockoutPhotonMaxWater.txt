@@ -1,0 +1,252 @@
+Simple Knockout Canister Model
+c
+c This model describes the fuel canister used to defuel TMI-2
+c Photon source and photon transport only
+c Homogeneous source
+c
+c ---Cells
+c
+c Case (upper cap, lower cap, outer case)
+300  3  -7.905  -41 -47 45              imp:p=1
+309  3  -7.905  -41 48 -46              imp:p=1
+301  3  -7.905  -41 31 -45 46           imp:p=1
+c 
+c Central poison rod
+100  3  -7.905  -10 17 -15 (11:14:-16)  imp:p=1 $ outer shell with caps
+101  0          -11 12 16 -14           imp:p=1 $ void between steel shells
+102  3  -7.905  -12 13 16 -14           imp:p=1 $ inner steel shell
+103  2  -2.52   -13 16 -14              imp:p=1 $ central B4C rod
+c 
+c Surrounding poison rods
+200  3  -7.905  -20 208 -29 (21:28:-16) imp:p=1 $ outer shell of right rod
+201  2  -2.52   -21 16 -28              imp:p=1 $ B4C in right rod
+202  3  -7.905  -22 208 -29 (23:28:-16) imp:p=1 $ outer shell of upper rod
+203  2  -2.52   -23 16 -28              imp:p=1 $ B4C in upper rod
+204  3  -7.905  -24 208 -29 (25:28:-16) imp:p=1 $ outer shell of left rod
+205  2  -2.52   -25 16 -28              imp:p=1 $ B4C in left rod
+206  3  -7.905  -26 208 -29 (27:28:-16) imp:p=1 $ outer shell of lower rod
+207  2  -2.52   -27 16 -28              imp:p=1 $ B4C in lower rod
+c 
+c Lower support plate
+90   3  -7.905  -31 -17 90    imp:p=1
+c 
+c Bottom void
+700   0   -31 -90 46     imp:p=0
+c 
+c Homogeneous fuel
+800   1  -5.602  -31 -45 17 (10:15) 
+     (20:29:-208) (22:29:-208) (24:29:-208) (26:29:-208)  imp:p=1
+c 
+c Outer layer - Water
+5  51  -1   (-51 -55 56) (41:47:-48)      imp:p=1
+c 
+c outside
+9   0         51:55:-56                       imp:p=0 
+
+c ^LEAVE BLANK
+c ---Surfaces
+c
+c fuel particle surfaces have mnemonic 's' (for sphere)
+c numbers start at 1001 -> can use anything until then for other surfaces
+c
+c Outer case
+31 cz   17.14 $ 17.1451 inside outer shell
+41 cz   17.78 $ outside outer shell
+45 pz  174.75 $ 174.4755 inner surface of upper lid
+46 pz -184.31 $ -174.75 inner surface of lower lid
+47 pz  184.95 $ outer surface of upper lid
+48 pz -184.95 $ outer surface of lower lid
+c 
+c Central poison rod
+10 cz    3.65  $ outside outer SS rod
+11 cz    2.86  $ inside outer SS rod
+12 cz    2.695 $ outside inner SS rod; gap between rods
+13 cz    2.535 $ inside inner SS rod; B4C inside
+14 pz  159.26  $ underside of upper cap
+15 pz  165.61  $ top of upper cap
+16 pz  -174.75 $ top of lower cap
+17 pz  -180.46 $ underside of lower cap
+c 
+c Outer poison rods 
+c outside SS rod, first rod on right
+20 c/z   0   8.9803   1.67 $ "/" indicates "parallel to"; entries are xCenter, yCenter, r
+21 c/z   0   8.9803   1.07 $ inside SS rod, B4C inside
+22 c/z  -8.9803   0   1.67 $ outside SS rod, upper rod
+23 c/z  -8.9803   0   1.07 $ inside upper SS rod
+24 c/z   0  -8.9803   1.67 $ outside SS rod, left rod
+25 c/z   0  -8.9803   1.07 $ inside left rod
+26 c/z   8.9803   0   1.67 $ outside SS rod, lower rod
+27 c/z   8.9803   0   1.07 $ inside lower rod
+28 pz    153.863 $ underside of upper cap
+29 pz    156.085 $ top of upper cap
+208 pz   -176.972 $ underside of lower cap (top is 16)
+c 
+c Lower support plate
+90 pz   -181.1 $ underside of support plate (top is 17)
+c 
+c Outer layer (water or air) (arb. thickness -- 1 m radially, 20 cm axially)
+51 cz  117.7800
+55 pz  204.95 $ 194.4755
+56 pz -204.95 $ -194.4755
+c 
+c Surfaces for tallies $ replace with mesh tallies
+60 cz   22.7800
+61 cz   27.7800
+62 cz   32.7800
+63 cz   37.7800
+64 cz   42.7800
+65 cz   47.7800
+66 cz   52.7800
+67 cz   57.7800
+68 cz   62.7800
+69 cz   67.7800
+70 cz   72.7800
+71 cz   77.7800
+72 cz   82.7800
+73 cz   87.7800
+74 cz   92.7800
+75 cz   97.7800
+76 cz  102.7800
+77 cz  107.7800
+78 cz  112.7800
+
+c ^LEAVE BLANK
+c ---Materials
+c
+c Matrix mix: check Ar(0.25%), SS304(0.510%), Water(0.1%), Fuel(0.140%)
+c guestimated density: ~5.602 g/cm^3
+m1     8016.70u  -2.93494e-02
+      92235.70u  -2.93275e-03
+      92238.70u  -2.15432e-01
+      26054.70u  -2.88447e-02
+      26056.70u  -4.69551e-01
+      26057.70u  -1.10379e-02
+      26058.70u  -1.49469e-03
+      24050.70u  -5.70655e-03
+      24052.70u  -1.14440e-01
+      24053.70u  -1.32264e-02
+      24054.70u  -3.35441e-03
+      28058.70u  -4.83564e-02
+      28060.70u  -1.92684e-02
+      28061.70u  -8.51562e-04
+      28062.70u  -2.75959e-03
+      28064.70u  -7.25480e-04
+       1001.70u  -1.89152e-03
+       1002.70u  -4.34766e-07
+       8016.70u  -1.50117e-02
+      18036.70u  -4.43719e-07
+      18038.70u  -8.79602e-08
+      18040.70u  -1.45923e-04
+c 
+c Boron carbide -- check: B(78 wt%) C(22 wt%), density 2.52 g/cc
+m2     5010.70u  -1.44247e-01
+       5011.70u  -6.38386e-01
+       6012.70u  -2.14852e-01
+       6013.70u  -2.51808e-03
+c
+c SS304L -- check: Fe(71wt%) Cr(19wt%) Ni(10wt%) - density 7.905 g/cc
+c http://www.hpmetals.com/-/media/ametekhpmetals/files/technical-data/stainless-steel/ss%20304l.pdf)
+m3    26054.70u  -4.00836e-02
+      26056.70u  -6.52503e-01
+      26057.70u  -1.53387e-02
+      26058.70u  -2.07707e-03
+      24050.70u  -7.93001e-03
+      24052.70u  -1.59029e-01
+      24053.70u  -1.83798e-02
+      24054.70u  -4.66140e-03
+      28058.70u  -6.71977e-02
+      28060.70u  -2.67759e-02
+      28061.70u  -1.18336e-03
+      28062.70u  -3.83482e-03
+      28064.70u  -1.00815e-03
+c
+c Water -- check H(11 wt%) O(89 wt%)
+m51    
+       1001.70u  -1.05970e-01
+       1002.70u  -2.43572e-05
+       8016.70u  -8.41008e-01
+c 
+c Air -- check C(0 wt%) N(76 wt%) O(23 wt%) Ar(1 wt%), density: 0.001 g/cc
+c m52    6012.70u  -1.22564e-04
+c       6013.70u  -1.43646e-06
+c        7014.70u  -7.52294e-01
+c        7015.70u  -2.97651e-03
+c        8016.70u  -8.82434e-02
+c       18036.70u  -3.88621e-05
+c       18038.70u  -7.70379e-06
+c       18040.70u  -1.27803e-02
+c       GAS=1
+c 
+c ---Source (sdef for source definition)
+c pos(position), cel(starting cell number), erg(starting energy), 
+c wgt(starting weight), tme(time), par(source particle type)
+c Neutron source
+sdef X=d1 Y=d2 Z=d3  cel=800 erg=d99 par=p
+c space distribution: box around fuel cell
+si1 -17.14 17.14  $ x limits
+sp1  0     1      $ uniform probability over x-range
+si2 -17.14 17.14  $ y limits
+sp2  0     1      $ uniform probability over y-range
+si3 -180.46 174.75  $ z limits
+sp3 0      1        $ uniform probability over z-range
+c
+c Energy distribution was obtained from an ORIGEN-S calculation
+c BWR GE 9x9, 1040 days depletion @ 25 MW/tHM (26 GWd/tHM), 7 years cooling
+si99 1.103E-03 1.217E-03 1.342E-03 1.480E-03 1.633E-03 1.801E-03 1.987E-03
+     2.191E-03 2.417E-03 2.666E-03 2.941E-03 3.243E-03 3.578E-03 3.946E-03 
+     4.353E-03 4.801E-03 5.296E-03 5.841E-03 6.443E-03 7.107E-03 7.839E-03 
+     8.647E-03 9.538E-03 1.052E-02 1.160E-02 1.280E-02 1.412E-02 1.557E-02
+     1.718E-02 1.895E-02 2.090E-02 2.305E-02 2.543E-02 2.805E-02 3.094E-02
+     3.412E-02 3.764E-02 4.152E-02 4.579E-02 5.051E-02 5.571E-02 6.145E-02
+     6.778E-02 7.477E-02 8.247E-02 9.097E-02 1.003E-01 1.107E-01 1.221E-01
+     1.347E-01 1.485E-01 1.638E-01 1.807E-01 1.993E-01 2.199E-01 2.425E-01
+     2.675E-01 2.951E-01 3.254E-01 3.590E-01 3.960E-01 4.368E-01 4.817E-01
+     5.314E-01 5.861E-01 6.465E-01 7.131E-01 7.866E-01 8.676E-01 9.570E-01
+     1.056E+00 1.164E+00 1.284E+00 1.417E+00 1.563E+00 1.724E+00 1.901E+00
+     2.097E+00 2.313E+00 2.551E+00 2.814E+00 3.104E+00 3.424E+00 3.777E+00
+     4.166E+00 4.595E+00 5.068E+00 5.590E+00 6.166E+00 6.801E+00 7.502E+00
+     8.275E+00 9.128E+00 1.007E+01 1.111E+01 1.225E+01 1.351E+01 1.490E+01
+     1.644E+01
+sp99 0.
+     1.995E-18 8.122E-06 2.793E-11 6.700E-11 2.425E-05 1.171E-04 3.896E-04
+     2.136E-03 8.562E-05 4.412E-05 4.508E-03 7.798E-04 1.323E+00 6.825E-01
+     5.101E-01 7.841E+00 2.560E+01 4.280E+01 3.655E+01 3.297E+01 2.725E+01
+     2.362E+01 2.077E+01 1.815E+01 1.589E+01 1.381E+01 1.293E+01 1.060E+01
+     9.466E+00 8.449E+00 6.296E+00 5.663E+00 5.686E+00 6.487E+00 3.917E+00
+     1.005E+01 5.099E+00 3.028E+00 3.366E+00 2.299E+00 1.369E+00 1.779E+00
+     1.599E+00 1.358E+00 1.183E+00 1.150E+00 8.134E-01 6.102E-01 5.204E-01
+     9.894E-01 4.579E-01 3.814E-01 3.363E-01 2.516E-01 1.407E-01 1.364E-01
+     1.689E-01 1.406E-01 1.327E-01 8.791E-02 7.772E-02 1.046E-01 7.398E-02
+     9.583E-02 2.163E-01 8.001E-01 4.855E+00 5.168E-02 5.198E-01 2.503E-02
+     4.449E-02 4.556E-03 4.287E-02 1.123E-02 1.671E-03 1.634E-03 2.176E-04
+     8.725E-05 3.777E-04 5.881E-05 2.047E-05 4.794E-06 1.169E-06 1.415E-07
+     9.231E-10 4.088E-10 2.568E-10 1.505E-10 8.365E-11 4.288E-11 1.986E-11
+     9.587E-12 3.710E-12 1.457E-12 4.034E-13 0.000E+00 0.000E+00 0.000E+00
+c
+c ---Tallies
+c
+f4:p 5 $ average photon flux in cell 5
+fs4   -41 -60 -61 -62 -63 -64 -65 -66 -67 -68
+      -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+sd4   3.83902E+05 2.46277E+05 3.06997E+05 3.67716E+05 4.28435E+05
+      4.89155E+05 5.49874E+05 6.10593E+05 6.71312E+05 7.32032E+05
+      7.92751E+05 8.53470E+05 9.14190E+05 9.74909E+05 1.03563E+06
+      1.09635E+06 1.15707E+06 1.21779E+06 1.27851E+06 1.33922E+06
+      1.39994E+06
+de4  log $ de card has energy grid(?) for fluence-to-dose factors
+     0.01 0.015 0.02 0.03 0.04 0.05 0.06
+     0.08 0.1   0.15 0.2  0.3  0.4  0.5  
+     0.6  0.8   1.   1.5  2.   3.   4.
+     5.   6.    8.   10.
+df4  log $ fluence-to-dose conversion factors
+     2.78E-06 1.11E-06 5.88E-07 2.56E-07 1.56E-07 1.20E-07 1.11E-07
+     1.20E-07 1.47E-07 2.38E-07 3.45E-07 5.56E-07 7.69E-07 9.09E-07
+     1.14E-06 1.47E-06 1.79E-06 2.44E-06 3.03E-06 4.00E-06 4.76E-06
+     5.56E-06 6.25E-06 7.69E-06 9.09E-06
+c ---Statistics
+mode p
+print
+prdmp 2j 1 $ dump card; j skips columns -> MCT is set to 1
+nps 1e9
+c CTME 2 $computing time of 2 minutes
+c
