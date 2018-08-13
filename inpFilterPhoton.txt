@@ -15,41 +15,41 @@ c Central poison rod
 100  3  -7.905  -10 12 -15 (11:-13:14)   imp:p=1 $ shell with caps
 103  2  -2.52   -11 13 -14               imp:p=1 $ central B4C rod
 c 
-c Surrounding filter rods MOEP fix filter materials
+c Surrounding filter rods
 200  3  -7.905  -20 12 -231 (21:-13:230)    imp:p=1 $ outer shell of (1)
-201  2  -2.52   -21 13 -230                 imp:p=1 $ SS-filter in (1)
+201  4  -8.68   -21 13 -230                 imp:p=1 $ SS-filter in (1)
 202  3  -7.905  -22 12 -231 (23:-13:230)    imp:p=1 $ outer shell of (2)
-203  2  -2.52   -23 13 -230                 imp:p=1 $ SS-filter in (2)
+203  4  -8.68   -23 13 -230                 imp:p=1 $ SS-filter in (2)
 204  3  -7.905  -24 12 -231 (25:-13:230)    imp:p=1 $ outer shell of (3)
-205  2  -2.52   -25 13 -230                 imp:p=1 $ SS-filter in (3)
+205  4  -8.68   -25 13 -230                 imp:p=1 $ SS-filter in (3)
 206  3  -7.905  -26 12 -231 (27:-13:230)    imp:p=1 $ outer shell of (4)
-207  2  -2.52   -27 13 -230                 imp:p=1 $ SS-filter in (4)
+207  4  -8.68   -27 13 -230                 imp:p=1 $ SS-filter in (4)
 208  3  -7.905  -28 12 -231 (29:-13:230)    imp:p=1 $ outer shell of (5)
-209  2  -2.52   -29 13 -230                 imp:p=1 $ SS-filter in (5)
+209  4  -8.68   -29 13 -230                 imp:p=1 $ SS-filter in (5)
 210  3  -7.905  -200 12 -231 (201:-13:230)  imp:p=1 $ outer shell of (6)
-211  2  -2.52   -201 13 -230                imp:p=1 $ SS-filter in (6)
+211  4  -8.68   -201 13 -230                imp:p=1 $ SS-filter in (6)
 212  3  -7.905  -202 12 -231 (203:-13:230)  imp:p=1 $ outer shell of (7)
-213  2  -2.52   -203 13 -230                imp:p=1 $ SS-filter in (7)
+213  4  -8.68   -203 13 -230                imp:p=1 $ SS-filter in (7)
 214  3  -7.905  -204 12 -231 (205:-13:230)  imp:p=1 $ outer shell of (8)
-215  2  -2.52   -205 13 -230                imp:p=1 $ SS-filter in (8)
+215  4  -8.68   -205 13 -230                imp:p=1 $ SS-filter in (8)
 216  3  -7.905  -206 12 -231 (207:-13:230)  imp:p=1 $ outer shell of (9)
-217  2  -2.52   -207 13 -230                imp:p=1 $ SS-filter in (9)
+217  4  -8.68   -207 13 -230                imp:p=1 $ SS-filter in (9)
 218  3  -7.905  -208 12 -231 (209:-13:230)  imp:p=1 $ outer shell of (10)
-219  2  -2.52   -209 13 -230                imp:p=1 $ SS-filter in (10)
+219  4  -8.68   -209 13 -230                imp:p=1 $ SS-filter in (10)
 220  3  -7.905  -210 12 -231 (211:-13:230)  imp:p=1 $ outer shell of (11)
-221  2  -2.52   -211 13 -230                imp:p=1 $ SS-filter in (11)
+221  4  -8.68   -211 13 -230                imp:p=1 $ SS-filter in (11)
 222  3  -7.905  -212 12 -231 (213:-13:230)  imp:p=1 $ outer shell of (12)
-223  2  -2.52   -213 13 -230                imp:p=1 $ SS-filter in (12)
+223  4  -8.68   -213 13 -230                imp:p=1 $ SS-filter in (12)
 224  3  -7.905  -214 12 -231 (215:-13:230)  imp:p=1 $ outer shell of (13)
-225  2  -2.52   -215 13 -230                imp:p=1 $ SS-filter in (13)
+225  4  -8.68   -215 13 -230                imp:p=1 $ SS-filter in (13)
 226  3  -7.905  -216 12 -231 (217:-13:230)  imp:p=1 $ outer shell of (14)
-227  2  -2.52   -217 13 -230                imp:p=1 $ SS-filter in (14)
+227  4  -8.68   -217 13 -230                imp:p=1 $ SS-filter in (14)
 228  3  -7.905  -218 12 -231 (219:-13:230)  imp:p=1 $ outer shell of (15)
-229  2  -2.52   -219 13 -230                imp:p=1 $ SS-filter in (15)
+229  4  -8.68   -219 13 -230                imp:p=1 $ SS-filter in (15)
 230  3  -7.905  -220 12 -231 (221:-13:230)  imp:p=1 $ outer shell of (16)
-231  2  -2.52   -221 13 -230                imp:p=1 $ SS-filter in (16)
+231  4  -8.68   -221 13 -230                imp:p=1 $ SS-filter in (16)
 232  3  -7.905  -222 12 -231 (223:-13:230)  imp:p=1 $ outer shell of (17)
-233  2  -2.52   -223 13 -230                imp:p=1 $ SS-filter in (17)
+233  4  -8.68   -223 13 -230                imp:p=1 $ SS-filter in (17)
 c 
 c Drain tube
 240  3  -7.905  -240 241 12 -231            imp:p=1 $ hollow drain tube
@@ -226,6 +226,24 @@ m3    26054.70u  -4.00836e-02
       28062.70u  -3.83482e-03
       28064.70u  -1.00815e-03
 c
+c Filter material -- check: SS304L(0.701vol%) Fuel(0.299vol%) - density ~8.68 gcc
+m4     8016.70u  -4.04529e-02
+      92235.70u  -4.04227e-03
+      92238.70u  -2.96934e-01
+      26054.70u  -2.55871e-02
+      26056.70u  -4.16521e-01
+      26057.70u  -9.79134e-03
+      26058.70u  -1.32589e-03
+      24050.70u  -5.06208e-03
+      24052.70u  -1.01515e-01
+      24053.70u  -1.17327e-02
+      24054.70u  -2.97557e-03
+      28058.70u  -4.28952e-02
+      28060.70u  -1.70923e-02
+      28061.70u  -7.55390e-04
+      28062.70u  -2.44793e-03
+      28064.70u  -6.43546e-04
+c 
 c Water -- check H(11 wt%) O(89 wt%)
 c m51    
 c       1001.70u  -1.05970e-01
