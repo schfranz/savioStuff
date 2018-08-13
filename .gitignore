@@ -1,9 +1,9 @@
-inpFilterNeutronAir
-inpFilterNeutronWater
-inpFilterPhotonAir
-inpFilterPhotonWater
-inpKnockoutNeutronAir
-inpKnockoutNeutronWater
-inpKnockoutPhotonAir
-inpKnockoutPhotonWater
+inpFilterNeutronAir.mcnp
+inpFilterNeutronWater.mcnp
+inpFilterPhotonAir.mcnp
+inpFilterPhotonWater.mcnp
+inpKnockoutNeutronAir.mcnp
+inpKnockoutNeutronWater.mcnp
+inpKnockoutPhotonAir.mcnp
+inpKnockoutPhotonWater.mcnp
 renameFiles.sh
