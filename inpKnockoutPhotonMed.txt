@@ -113,7 +113,7 @@ c Surfaces for tallies $ replace with mesh tallies
 c ^LEAVE BLANK
 c ---Materials
 c
-c Matrix mix: check Ar(0.25%), SS304(0.510%), Water(0.1%), Fuel(0.140%)
+c Matrix mix: check Ar(0.25%), SS304(0.622%), Water(0.1%), Fuel(0.028%)
 c guestimated density: ~5.313 g/cm^3
 m1     8016.70u  -6.19106e-03
       92235.70u  -6.18645e-04
