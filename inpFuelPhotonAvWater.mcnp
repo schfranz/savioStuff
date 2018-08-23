@@ -1287,7 +1287,7 @@ c ---Source (sdef for source definition)
 c pos(position), cel(starting cell number), erg(starting energy), 
 c wgt(starting weight), tme(time), par(source particle type)
 c Neutron source
-sdef cel=d10 rad=d1 erg=d99 par=n pos=fcel=d3
+sdef cel=d10 rad=d1 erg=d99 par=p pos=fcel=d3
 c space distribution
 si1     3.37470
 c Center of each sphere
