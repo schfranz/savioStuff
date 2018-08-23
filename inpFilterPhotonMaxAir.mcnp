@@ -332,6 +332,6 @@ c ---Statistics
 mode p
 print
 prdmp 2j 1 $ dump card; j skips columns -> MCT is set to 1
-nps 1e8
+nps 1e7
 c CTME 2 $computing time of 2 minutes
 c
