@@ -748,13 +748,13 @@ m101    8016.70u  6.66667e-01
        92235.70u  4.53333e-03
        92238.70u  3.28800e-01
 c 
-c B4C -- check: B(78 wt
+c B4C -- check: B(78 wt%), C(22 wt%), density 2.52 g/cc
 m201   5010.70u  -1.44247e-01
        5011.70u  -6.38386e-01
        6012.70u  -2.14852e-01
        6013.70u  -2.51808e-03
 c 
-c ZircaloySimple -- check: Zr(97wt
+c ZircaloySimple -- check: Zr(97wt%), Sn(3wt%) density 6.56 g/cc
 m301  40090.70u  -4.93942e-01
       40091.70u  -1.08916e-01
       40092.70u  -1.68310e-01
