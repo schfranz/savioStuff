@@ -1,4 +1,4 @@
-Simple Knockout Canister Model
+	Simple Knockout Canister Model
 c
 c This model describes the fuel canister used to defuel TMI-2
 c Neutron source, neutron and photon transport only
@@ -145,8 +145,7 @@ m2     5010.70u  -1.44247e-01
        6012.70u  -2.14852e-01
        6013.70u  -2.51808e-03
 c
-c SS304L -- okay: Fe(71wt%) Cr(19wt%) Ni(10wt%) - density 8 g/cc
-c http://www.hpmetals.com/-/media/ametekhpmetals/files/technical-data/stainless-steel/ss%20304l.pdf)
+c SS304L -- okay: Fe(71wt%) Cr(19wt%) Ni(10wt%) - density 8.0 g/cc
 m3    26054.70u  -4.00836e-02
       26056.70u  -6.52503e-01
       26057.70u  -1.53387e-02
@@ -263,9 +262,9 @@ df14  log
       2.08E-05 7.14E-05 1.18E-04 1.43E-04 1.47E-04 1.47E-04 1.54E-04
 c
 c ---Statistics
-mode n p $ MOEP p
+mode n p
 print
 prdmp 2j 1 $ dump card; j skips columns -> MCT is set to 1
-nps 1e5
+nps 1e7
 c CTME 2 $computing time of 2 minutes
 c

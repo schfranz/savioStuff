@@ -7,34 +7,34 @@ c
 c ---Cells
 c
 c Case (upper cap, lower cap, outer case)
-300  3  -7.905  -41 -47 45              imp:p=1
-309  3  -7.905  -41 48 -46              imp:p=1
-301  3  -7.905  -41 31 -45 46           imp:p=1
+300  3  -8  -41 -47 45              imp:p=1
+309  3  -8  -41 48 -46              imp:p=1
+301  3  -8  -41 31 -45 46           imp:p=1
 c 
 c Central poison rod
-100  3  -7.905  -10 17 -15 (11:14:-16)  imp:p=1 $ outer shell with caps
+100  3  -8  -10 17 -15 (11:14:-16)  imp:p=1 $ outer shell with caps
 101  0          -11 12 16 -14           imp:p=1 $ void between steel shells
-102  3  -7.905  -12 13 16 -14           imp:p=1 $ inner steel shell
+102  3  -8  -12 13 16 -14           imp:p=1 $ inner steel shell
 103  2  -2.52   -13 16 -14              imp:p=1 $ central B4C rod
 c 
 c Surrounding poison rods
-200  3  -7.905  -20 208 -29 (21:28:-16) imp:p=1 $ outer shell of right rod
+200  3  -8  -20 208 -29 (21:28:-16) imp:p=1 $ outer shell of right rod
 201  2  -2.52   -21 16 -28              imp:p=1 $ B4C in right rod
-202  3  -7.905  -22 208 -29 (23:28:-16) imp:p=1 $ outer shell of upper rod
+202  3  -8  -22 208 -29 (23:28:-16) imp:p=1 $ outer shell of upper rod
 203  2  -2.52   -23 16 -28              imp:p=1 $ B4C in upper rod
-204  3  -7.905  -24 208 -29 (25:28:-16) imp:p=1 $ outer shell of left rod
+204  3  -8  -24 208 -29 (25:28:-16) imp:p=1 $ outer shell of left rod
 205  2  -2.52   -25 16 -28              imp:p=1 $ B4C in left rod
-206  3  -7.905  -26 208 -29 (27:28:-16) imp:p=1 $ outer shell of lower rod
+206  3  -8  -26 208 -29 (27:28:-16) imp:p=1 $ outer shell of lower rod
 207  2  -2.52   -27 16 -28              imp:p=1 $ B4C in lower rod
 c 
 c Lower support plate
-90   3  -7.905  -31 -17 90    imp:p=1
+90   3  -8  -31 -17 90    imp:p=1
 c 
 c Bottom void
 700   0   -31 -90 46     imp:p=0
 c 
 c Homogeneous fuel
-800   1  -5.602  -31 -45 17 (10:15) 
+800   1  -5.65  -31 -45 17 (10:15) 
      (20:29:-208) (22:29:-208) (24:29:-208) (26:29:-208)  imp:p=1
 c 
 c Outer layer - Water
@@ -113,8 +113,9 @@ c Surfaces for tallies $ replace with mesh tallies
 c ^LEAVE BLANK
 c ---Materials
 c
-c Matrix mix: check Ar(0.25%), SS304(0.510%), Water(0.1%), Fuel(0.140%)
-c guestimated density: ~5.602 g/cm^3
+c Fuel matrix mix -- okay:  Ar(25 vol%), SS304(51.0 vol%), 
+c Water(10 vol%), Fuel(14 vol%)
+c guestimated density: ~5.65 g/cm^3
 m1     8016.70u  -2.93494e-02
       92235.70u  -2.93275e-03
       92238.70u  -2.15432e-01
@@ -138,14 +139,13 @@ m1     8016.70u  -2.93494e-02
       18038.70u  -8.79602e-08
       18040.70u  -1.45923e-04
 c 
-c Boron carbide -- check: B(78 wt%) C(22 wt%), density 2.52 g/cc
+c Boron carbide -- okay: B(78 wt%) C(22 wt%) - density 2.52 g/cc
 m2     5010.70u  -1.44247e-01
        5011.70u  -6.38386e-01
        6012.70u  -2.14852e-01
        6013.70u  -2.51808e-03
 c
-c SS304L -- check: Fe(71wt%) Cr(19wt%) Ni(10wt%) - density 7.905 g/cc
-c http://www.hpmetals.com/-/media/ametekhpmetals/files/technical-data/stainless-steel/ss%20304l.pdf)
+c SS304L -- okay: Fe(71wt%) Cr(19wt%) Ni(10wt%) - density 8.0 g/cc
 m3    26054.70u  -4.00836e-02
       26056.70u  -6.52503e-01
       26057.70u  -1.53387e-02
@@ -160,13 +160,13 @@ m3    26054.70u  -4.00836e-02
       28062.70u  -3.83482e-03
       28064.70u  -1.00815e-03
 c
-c Water -- check H(11 wt%) O(89 wt%)
+c Water -- okay: H(11 wt%) O(89 wt%)
 m51    
        1001.70u  -1.05970e-01
        1002.70u  -2.43572e-05
        8016.70u  -8.41008e-01
 c 
-c Air -- check C(0 wt%) N(76 wt%) O(23 wt%) Ar(1 wt%), density: 0.001 g/cc
+c Air -- okay: C(0 wt%) N(76 wt%) O(23 wt%) Ar(1 wt%), density: 0.001 g/cc
 c m52    6012.70u  -1.22564e-04
 c       6013.70u  -1.43646e-06
 c        7014.70u  -7.52294e-01

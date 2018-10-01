@@ -7,63 +7,63 @@ c
 c ---Cells
 c
 c Case (upper cap, lower cap, outer case)
-300  3  -7.905  -41 -47 45               imp:np=1
-309  3  -7.905  -41 48 -46               imp:np=1
-301  3  -7.905  -41 31 -45 46            imp:np=1
+300  3  -8  -41 -47 45               imp:np=1
+309  3  -8  -41 48 -46               imp:np=1
+301  3  -8  -41 31 -45 46            imp:np=1
 c 
 c Central poison rod
-100  3  -7.905  -10 12 -15 (11:-13:14)   imp:np=1 $ shell with caps
+100  3  -8  -10 12 -15 (11:-13:14)   imp:np=1 $ shell with caps
 103  2  -2.52   -11 13 -14               imp:np=1 $ central B4C rod
 c 
 c Surrounding filter rods
-200  3  -7.905  -20 12 -231 (21:-13:230)    imp:np=1 $ outer shell of (1)
-201  4  -8.68   -21 13 -230                 imp:np=1 $ SS-filter in (1)
-202  3  -7.905  -22 12 -231 (23:-13:230)    imp:np=1 $ outer shell of (2)
-203  4  -8.68   -23 13 -230                 imp:np=1 $ SS-filter in (2)
-204  3  -7.905  -24 12 -231 (25:-13:230)    imp:np=1 $ outer shell of (3)
-205  4  -8.68   -25 13 -230                 imp:np=1 $ SS-filter in (3)
-206  3  -7.905  -26 12 -231 (27:-13:230)    imp:np=1 $ outer shell of (4)
-207  4  -8.68   -27 13 -230                 imp:np=1 $ SS-filter in (4)
-208  3  -7.905  -28 12 -231 (29:-13:230)    imp:np=1 $ outer shell of (5)
-209  4  -8.68   -29 13 -230                 imp:np=1 $ SS-filter in (5)
-210  3  -7.905  -200 12 -231 (201:-13:230)  imp:np=1 $ outer shell of (6)
-211  4  -8.68   -201 13 -230                imp:np=1 $ SS-filter in (6)
-212  3  -7.905  -202 12 -231 (203:-13:230)  imp:np=1 $ outer shell of (7)
-213  4  -8.68   -203 13 -230                imp:np=1 $ SS-filter in (7)
-214  3  -7.905  -204 12 -231 (205:-13:230)  imp:np=1 $ outer shell of (8)
-215  4  -8.68   -205 13 -230                imp:np=1 $ SS-filter in (8)
-216  3  -7.905  -206 12 -231 (207:-13:230)  imp:np=1 $ outer shell of (9)
-217  4  -8.68   -207 13 -230                imp:np=1 $ SS-filter in (9)
-218  3  -7.905  -208 12 -231 (209:-13:230)  imp:np=1 $ outer shell of (10)
-219  4  -8.68   -209 13 -230                imp:np=1 $ SS-filter in (10)
-220  3  -7.905  -210 12 -231 (211:-13:230)  imp:np=1 $ outer shell of (11)
-221  4  -8.68   -211 13 -230                imp:np=1 $ SS-filter in (11)
-222  3  -7.905  -212 12 -231 (213:-13:230)  imp:np=1 $ outer shell of (12)
-223  4  -8.68   -213 13 -230                imp:np=1 $ SS-filter in (12)
-224  3  -7.905  -214 12 -231 (215:-13:230)  imp:np=1 $ outer shell of (13)
-225  4  -8.68   -215 13 -230                imp:np=1 $ SS-filter in (13)
-226  3  -7.905  -216 12 -231 (217:-13:230)  imp:np=1 $ outer shell of (14)
-227  4  -8.68   -217 13 -230                imp:np=1 $ SS-filter in (14)
-228  3  -7.905  -218 12 -231 (219:-13:230)  imp:np=1 $ outer shell of (15)
-229  4  -8.68   -219 13 -230                imp:np=1 $ SS-filter in (15)
-230  3  -7.905  -220 12 -231 (221:-13:230)  imp:np=1 $ outer shell of (16)
-231  4  -8.68   -221 13 -230                imp:np=1 $ SS-filter in (16)
-232  3  -7.905  -222 12 -231 (223:-13:230)  imp:np=1 $ outer shell of (17)
-233  4  -8.68   -223 13 -230                imp:np=1 $ SS-filter in (17)
+200  3  -8  -20 12 -231 (21:-13:230)    imp:np=1 $ outer shell of (1)
+201  4  -8.09   -21 13 -230                 imp:np=1 $ SS-filter in (1)
+202  3  -8  -22 12 -231 (23:-13:230)    imp:np=1 $ outer shell of (2)
+203  4  -8.09   -23 13 -230                 imp:np=1 $ SS-filter in (2)
+204  3  -8  -24 12 -231 (25:-13:230)    imp:np=1 $ outer shell of (3)
+205  4  -8.09   -25 13 -230                 imp:np=1 $ SS-filter in (3)
+206  3  -8  -26 12 -231 (27:-13:230)    imp:np=1 $ outer shell of (4)
+207  4  -8.09   -27 13 -230                 imp:np=1 $ SS-filter in (4)
+208  3  -8  -28 12 -231 (29:-13:230)    imp:np=1 $ outer shell of (5)
+209  4  -8.09   -29 13 -230                 imp:np=1 $ SS-filter in (5)
+210  3  -8  -200 12 -231 (201:-13:230)  imp:np=1 $ outer shell of (6)
+211  4  -8.09   -201 13 -230                imp:np=1 $ SS-filter in (6)
+212  3  -8  -202 12 -231 (203:-13:230)  imp:np=1 $ outer shell of (7)
+213  4  -8.09   -203 13 -230                imp:np=1 $ SS-filter in (7)
+214  3  -8  -204 12 -231 (205:-13:230)  imp:np=1 $ outer shell of (8)
+215  4  -8.09   -205 13 -230                imp:np=1 $ SS-filter in (8)
+216  3  -8  -206 12 -231 (207:-13:230)  imp:np=1 $ outer shell of (9)
+217  4  -8.09   -207 13 -230                imp:np=1 $ SS-filter in (9)
+218  3  -8  -208 12 -231 (209:-13:230)  imp:np=1 $ outer shell of (10)
+219  4  -8.09   -209 13 -230                imp:np=1 $ SS-filter in (10)
+220  3  -8  -210 12 -231 (211:-13:230)  imp:np=1 $ outer shell of (11)
+221  4  -8.09   -211 13 -230                imp:np=1 $ SS-filter in (11)
+222  3  -8  -212 12 -231 (213:-13:230)  imp:np=1 $ outer shell of (12)
+223  4  -8.09   -213 13 -230                imp:np=1 $ SS-filter in (12)
+224  3  -8  -214 12 -231 (215:-13:230)  imp:np=1 $ outer shell of (13)
+225  4  -8.09   -215 13 -230                imp:np=1 $ SS-filter in (13)
+226  3  -8  -216 12 -231 (217:-13:230)  imp:np=1 $ outer shell of (14)
+227  4  -8.09   -217 13 -230                imp:np=1 $ SS-filter in (14)
+228  3  -8  -218 12 -231 (219:-13:230)  imp:np=1 $ outer shell of (15)
+229  4  -8.09   -219 13 -230                imp:np=1 $ SS-filter in (15)
+230  3  -8  -220 12 -231 (221:-13:230)  imp:np=1 $ outer shell of (16)
+231  4  -8.09   -221 13 -230                imp:np=1 $ SS-filter in (16)
+232  3  -8  -222 12 -231 (223:-13:230)  imp:np=1 $ outer shell of (17)
+233  4  -8.09   -223 13 -230                imp:np=1 $ SS-filter in (17)
 c 
 c Drain tube
-240  3  -7.905  -240 241 12 -231            imp:np=1 $ hollow drain tube
+240  3  -8  -240 241 12 -231            imp:np=1 $ hollow drain tube
 c 
 c Tie rods
-80  3  -7.905  -80 12 -231                  imp:np=1 $ solid steel tie rod (upper right)
-81  3  -7.905  -81 12 -231                  imp:np=1 $ solid steel tie rod (top)
-82  3  -7.905  -82 12 -231                  imp:np=1 $ solid steel tie rod (upper left)
-83  3  -7.905  -83 12 -231                  imp:np=1 $ solid steel tie rod (lower left)
-84  3  -7.905  -84 12 -231                  imp:np=1 $ solid steel tie rod (bottom)
-85  3  -7.905  -85 12 -231                  imp:np=1 $ solid steel tie rod (lower right)
+80  3  -8  -80 12 -231                  imp:np=1 $ solid steel tie rod (upper right)
+81  3  -8  -81 12 -231                  imp:np=1 $ solid steel tie rod (top)
+82  3  -8  -82 12 -231                  imp:np=1 $ solid steel tie rod (upper left)
+83  3  -8  -83 12 -231                  imp:np=1 $ solid steel tie rod (lower left)
+84  3  -8  -84 12 -231                  imp:np=1 $ solid steel tie rod (bottom)
+85  3  -8  -85 12 -231                  imp:np=1 $ solid steel tie rod (lower right)
 c 
 c Homogeneous fuel
-800   1  -5.280  -31 -45 46
+800   1  -5.32  -31 -45 46
      (10:-12:15)
      (20:-12:231) (22:-12:231) (24:-12:231) (26:-12:231) (28:-12:231) 
 	 (200:-12:231) (202:-12:231) (204:-12:231) (206:-12:231) (208:-12:231)
@@ -179,39 +179,41 @@ c Surfaces for tallies $ replace with mesh tallies
 c ^LEAVE BLANK
 c ---Materials
 c
-c Matrix mix: check Ar(0.25%), SS304(0.634%), Water(0.1%), Fuel(0.016%)
-c guestimated density: ~5.280 gcc
-m1     8016.70u  -3.55861e-03
-      92235.70u  -3.55596e-04
-      92238.70u  -2.61211e-02
-      26054.70u  -3.80430e-02
-      26056.70u  -6.19285e-01
-      26057.70u  -1.45578e-02
-      26058.70u  -1.97133e-03
-      24050.70u  -7.52632e-03
-      24052.70u  -1.50933e-01
-      24053.70u  -1.74442e-02
-      24054.70u  -4.42410e-03
-      28058.70u  -6.37768e-02
-      28060.70u  -2.54129e-02
-      28061.70u  -1.12312e-03
-      28062.70u  -3.63960e-03
-      28064.70u  -9.56827e-04
-       1001.70u  -2.00679e-03
-       1002.70u  -4.61259e-07
-       8016.70u  -1.59264e-02
-      18036.70u  -4.70757e-07
-      18038.70u  -9.33202e-08
-      18040.70u  -1.54815e-04
+c Fuel matrix mix -- okay: Ar(25 vol%), SS304(64.25 vol%), 
+c Water(10 vol%), Fuel(0.75 vol%)
+c guestimated density: ~5.32 gcc
+m1     8016.70u  -1.65588e-03
+      92235.70u  -1.65464e-04
+      92238.70u  -1.21545e-02
+      26054.70u  -3.87305e-02
+      26056.70u  -6.30476e-01
+      26057.70u  -1.48209e-02
+      26058.70u  -2.00696e-03
+      24050.70u  -7.66232e-03
+      24052.70u  -1.53661e-01
+      24053.70u  -1.77594e-02
+      24054.70u  -4.50404e-03
+      28058.70u  -6.49293e-02
+      28060.70u  -2.58721e-02
+      28061.70u  -1.14341e-03
+      28062.70u  -3.70537e-03
+      28064.70u  -9.74118e-04
+       1001.70u  -1.99208e-03
+       1002.70u  -4.57879e-07
+       8016.70u  -1.58097e-02
+      18036.70u  -4.67308e-07
+      18038.70u  -9.26364e-08
+      18040.70u  -1.53681e-04
 c 
-c Boron carbide -- check: B(78 wt%) C(22 wt%), density 2.52 g/cc
+c Boron carbide -- okay: B(78 wt%) C(22 wt%), density 2.52 g/cc
+c PNNL
 m2     5010.70u  -1.44247e-01
        5011.70u  -6.38386e-01
        6012.70u  -2.14852e-01
        6013.70u  -2.51808e-03
 c
-c SS304L -- check: Fe(71wt%) Cr(19wt%) Ni(10wt%) - density 7.905 g/cc
-c http://www.hpmetals.com/-/media/ametekhpmetals/files/technical-data/stainless-steel/ss%20304l.pdf)
+c SS304L -- okay: Fe(71wt%) Cr(19wt%) Ni(10wt%) - density 8.0 g/cc
+c PNNL
 m3    26054.70u  -4.00836e-02
       26056.70u  -6.52503e-01
       26057.70u  -1.53387e-02
@@ -226,40 +228,40 @@ m3    26054.70u  -4.00836e-02
       28062.70u  -3.83482e-03
       28064.70u  -1.00815e-03
 c
-c Filter material -- check: SS304L(0.701vol%) Fuel(0.299vol%) - density ~8.68 gcc
-m4     8016.70u  -4.04529e-02
-      92235.70u  -4.04227e-03
-      92238.70u  -2.96934e-01
-      26054.70u  -2.55871e-02
-      26056.70u  -4.16521e-01
-      26057.70u  -9.79134e-03
-      26058.70u  -1.32589e-03
-      24050.70u  -5.06208e-03
-      24052.70u  -1.01515e-01
-      24053.70u  -1.17327e-02
-      24054.70u  -2.97557e-03
-      28058.70u  -4.28952e-02
-      28060.70u  -1.70923e-02
-      28061.70u  -7.55390e-04
-      28062.70u  -2.44793e-03
-      28064.70u  -6.43546e-04
+c Filter material -- okay: SS304L(96.6 vol%) Fuel(3.4 vol%) - density ~8.09 gcc
+m4     8016.70u  -4.93904e-03
+      92235.70u  -4.93535e-04
+      92238.70u  -3.62538e-02
+      26054.70u  -3.83136e-02
+      26056.70u  -6.23691e-01
+      26057.70u  -1.46614e-02
+      26058.70u  -1.98536e-03
+      24050.70u  -7.57985e-03
+      24052.70u  -1.52007e-01
+      24053.70u  -1.75683e-02
+      24054.70u  -4.45557e-03
+      28058.70u  -6.42305e-02
+      28060.70u  -2.55936e-02
+      28061.70u  -1.13111e-03
+      28062.70u  -3.66549e-03
+      28064.70u  -9.63634e-04
 c 
-c Water -- check H(11 wt%) O(89 wt%)
+c Water -- okay: H(11 wt%) O(89 wt%) density 1 gcc
 m51    
-       1001.70u  -1.05970e-01
-       1002.70u  -2.43572e-05
-       8016.70u  -8.41008e-01
+      1001.70u  -1.05970e-01
+      1002.70u  -2.43572e-05
+      8016.70u  -8.41008e-01
 c 
-c Air -- check C(0 wt%) N(76 wt%) O(23 wt%) Ar(1 wt%), density: 0.001 g/cc
+c Air -- okay: C(0 wt%) N(76 wt%) O(23 wt%) Ar(1 wt%), density: 0.001 g/cc
 c m52    6012.70u  -1.22564e-04
-c        6013.70u  -1.43646e-06
-c        7014.70u  -7.52294e-01
-c        7015.70u  -2.97651e-03
-c        8016.70u  -8.82434e-02
-c       18036.70u  -3.88621e-05
-c       18038.70u  -7.70379e-06
-c       18040.70u  -1.27803e-02
-c       GAS=1
+c 	 6013.70u  -1.43646e-06
+c 	 7014.70u  -7.52294e-01
+c 	 7015.70u  -2.97651e-03
+c 	 8016.70u  -8.82434e-02
+c 	18036.70u  -3.88621e-05
+c 	18038.70u  -7.70379e-06
+c 	18040.70u  -1.27803e-02
+c 	GAS=1
 c 
 c ---Source (sdef for source definition)
 c pos(position), cel(starting cell number), erg(starting energy), 
