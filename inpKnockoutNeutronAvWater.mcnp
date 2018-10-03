@@ -192,6 +192,7 @@ sp3 0      1        $ uniform probability over z-range
 c
 c Energy distribution was obtained from an ORIGEN-S calculation
 c BWR GE 9x9, 1040 days depletion @ 25 MW/tHM (26 GWd/tHM), 7 years cooling
+c Neutron Source
 si99 1.000E-10
      1.145E-10 1.505E-10 1.982E-10 2.605E-10 3.428E-10 4.503E-10 5.919E-10
      7.782E-10 1.022E-09 1.342E-09 1.768E-09 2.328E-09 3.057E-09 4.017E-09
